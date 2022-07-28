@@ -1,5 +1,5 @@
 //
-//  Button.swift
+//  CurrentButton.swift
 //  LaChuga
 //
 //  Created by Антон Макаров on 25.07.2022.
@@ -7,27 +7,35 @@
 
 import SwiftUI
 
-struct Buttons: View {
-    @State var imageName: String
-    @State var action: () -> Void
+struct CurrentButton: View {
+    var imageName: String
+    var action: () -> Void
+    var titleText: String
+
     var body: some View {
         Button(action: {
-         action()
+            action()
         }, label: {
-            Image(imageName)
+            VStack {
+                Image(imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50, height: 50)
+                Text(titleText)
+            }
+            .frame(maxWidth: 100, maxHeight: 100)
+            .foregroundColor(.white)
+            .background(Color("BackgroundButton"))
+            .cornerRadius(15)
         })
-            .padding(10)
-            .frame(width: 100, height: 100, alignment: .center)
-            .background(Color("TitleColor"))
-            .cornerRadius(20)
     }
 }
 
 
 struct Button_Previews: PreviewProvider {
     static var previews: some View {
-        Buttons(imageName: "Exclamation", action: {
+        CurrentButton(imageName: "Exclamation", action: {
             print("go")
-        })
+        }, titleText: "О нас")
     }
 }
