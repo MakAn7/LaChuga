@@ -12,15 +12,16 @@ struct ArticlesList: View {
 
     var body: some View {
         NavigationView {
-            Form {
+            List {
                 ForEach(ArticleModel.getMockArticleData()) { article in
                     HStack {
                         ArticleCell(article: article)
                         Spacer()
                     }
-                 .foregroundColor(.white)
-                    .padding(10)
-                    .background(Color.red)
+                    .padding(7)
+                    .background(Image("backgroundCell")
+                                    .opacity(0.7)
+                    )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .listRowSeparator(.hidden, edges: .all)
                 }

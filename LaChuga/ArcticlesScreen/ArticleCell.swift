@@ -16,17 +16,17 @@ struct ArticleCell: View {
                 .resizable()
                 .frame(width: 120, height: 120)
                 .scaledToFill()
+                .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
             
             VStack(spacing: 15) {
                 Text(article.title)
-                    .font(.headline)
+                    .font(.system(.headline, design: .serif)).font(.system(size: 20))
                 Text(article.description)
             } .lineLimit(4)
-                .font(.system(size: 14))
+                .font(.system(.subheadline, design: .serif))
+                .font(.system(size: 16))
         }
         .listRowInsets(EdgeInsets())
-        .listRowSeparator(.hidden)
-//        .padding(.bottom, 5)
     }
 }
 
