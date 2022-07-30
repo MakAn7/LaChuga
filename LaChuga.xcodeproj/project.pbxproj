@@ -13,7 +13,7 @@
 		E2B44281288F24BF00E891C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B44280288F24BF00E891C6 /* Assets.xcassets */; };
 		E2B44284288F24BF00E891C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B44283288F24BF00E891C6 /* Preview Assets.xcassets */; };
 		E2B4428B288F339E00E891C6 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4428A288F339E00E891C6 /* Button.swift */; };
-		E2B442912892B32D00E891C6 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B442902892B32D00E891C6 /* ArticlesView.swift */; };
+		E2B442912892B32D00E891C6 /* ArticlesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B442902892B32D00E891C6 /* ArticlesList.swift */; };
 		E2B442932892B8DB00E891C6 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B442922892B8DB00E891C6 /* ArticleCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 		E2B44280288F24BF00E891C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2B44283288F24BF00E891C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2B4428A288F339E00E891C6 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		E2B442902892B32D00E891C6 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		E2B442902892B32D00E891C6 /* ArticlesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesList.swift; sourceTree = "<group>"; };
 		E2B442922892B8DB00E891C6 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +113,7 @@
 		E2B4428F2892B2F600E891C6 /* ArcticlesScreen */ = {
 			isa = PBXGroup;
 			children = (
-				E2B442902892B32D00E891C6 /* ArticlesView.swift */,
+				E2B442902892B32D00E891C6 /* ArticlesList.swift */,
 				E2B442922892B8DB00E891C6 /* ArticleCell.swift */,
 			);
 			path = ArcticlesScreen;
@@ -194,7 +194,7 @@
 				E2B4427D288F24BE00E891C6 /* LaChugaApp.swift in Sources */,
 				E2B442932892B8DB00E891C6 /* ArticleCell.swift in Sources */,
 				E28E50DA2892BE9D00413F87 /* ArticleModel.swift in Sources */,
-				E2B442912892B32D00E891C6 /* ArticlesView.swift in Sources */,
+				E2B442912892B32D00E891C6 /* ArticlesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
