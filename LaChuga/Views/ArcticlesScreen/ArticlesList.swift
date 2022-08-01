@@ -1,5 +1,5 @@
 //
-//  ArticlesView.swift
+//  ArticlesList.swift
 //  LaChuga
 //
 //  Created by Антон Макаров on 28.07.2022.
@@ -13,7 +13,7 @@ struct ArticlesList: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(ArticleModel.getMockArticleData()) { article in
+                ForEach(ArticleModel.getMockArticleData(), id: \.id) { article in
                     HStack {
                         ArticleCell(article: article)
                         Spacer()

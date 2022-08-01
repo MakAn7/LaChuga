@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E28E50DA2892BE9D00413F87 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E50D92892BE9D00413F87 /* ArticleModel.swift */; };
+		E28E50DD2895447C00413F87 /* ConverterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E50DC2895447C00413F87 /* ConverterList.swift */; };
+		E28E50E3289547FA00413F87 /* ConverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E50E2289547FA00413F87 /* ConverterModel.swift */; };
+		E28E50E52896D98A00413F87 /* ConverterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E50E42896D98A00413F87 /* ConverterCell.swift */; };
 		E2B4427D288F24BE00E891C6 /* LaChugaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4427C288F24BE00E891C6 /* LaChugaApp.swift */; };
 		E2B4427F288F24BE00E891C6 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4427E288F24BE00E891C6 /* StartView.swift */; };
 		E2B44281288F24BF00E891C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B44280288F24BF00E891C6 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		E28E50D92892BE9D00413F87 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		E28E50DC2895447C00413F87 /* ConverterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterList.swift; sourceTree = "<group>"; };
+		E28E50E2289547FA00413F87 /* ConverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterModel.swift; sourceTree = "<group>"; };
+		E28E50E42896D98A00413F87 /* ConverterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterCell.swift; sourceTree = "<group>"; };
 		E2B44279288F24BE00E891C6 /* LaChuga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaChuga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B4427C288F24BE00E891C6 /* LaChugaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaChugaApp.swift; sourceTree = "<group>"; };
 		E2B4427E288F24BE00E891C6 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -40,12 +46,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E28E50DB2892C4AF00413F87 /* Models */ = {
+		E28E50DE2895448500413F87 /* ConverterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E28E50DC2895447C00413F87 /* ConverterList.swift */,
+				E28E50E42896D98A00413F87 /* ConverterCell.swift */,
+			);
+			name = ConverterScreen;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E28E50DF289546A900413F87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4428E2892B2C200E891C6 /* StartScreen */,
+				E2B4428F2892B2F600E891C6 /* ArcticlesScreen */,
+				E28E50DE2895448500413F87 /* ConverterScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E28E50E0289546CE00413F87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E28E50D92892BE9D00413F87 /* ArticleModel.swift */,
+				E28E50E2289547FA00413F87 /* ConverterModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E28E50E12895470E00413F87 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		E2B44270288F24BE00E891C6 = {
@@ -68,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				E2B4427C288F24BE00E891C6 /* LaChugaApp.swift */,
-				E2B4428F2892B2F600E891C6 /* ArcticlesScreen */,
-				E28E50DB2892C4AF00413F87 /* Models */,
-				E2B4428E2892B2C200E891C6 /* StartScreen */,
+				E28E50DF289546A900413F87 /* Views */,
+				E28E50E0289546CE00413F87 /* Models */,
+				E28E50E12895470E00413F87 /* ViewModels */,
 				E2B4428D2892B2A600E891C6 /* Resources */,
 				E2B44282288F24BF00E891C6 /* Preview Content */,
 			);
@@ -189,10 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28E50E3289547FA00413F87 /* ConverterModel.swift in Sources */,
 				E2B4427F288F24BE00E891C6 /* StartView.swift in Sources */,
 				E2B4428B288F339E00E891C6 /* Button.swift in Sources */,
 				E2B4427D288F24BE00E891C6 /* LaChugaApp.swift in Sources */,
 				E2B442932892B8DB00E891C6 /* ArticleCell.swift in Sources */,
+				E28E50DD2895447C00413F87 /* ConverterList.swift in Sources */,
+				E28E50E52896D98A00413F87 /* ConverterCell.swift in Sources */,
 				E28E50DA2892BE9D00413F87 /* ArticleModel.swift in Sources */,
 				E2B442912892B32D00E891C6 /* ArticlesList.swift in Sources */,
 			);

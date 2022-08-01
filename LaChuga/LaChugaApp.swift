@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+let screen = UIScreen.main.bounds
+
 @main
 struct LaChugaApp: App {
     var body: some Scene {
         WindowGroup {
-            ArticlesList()
+            ConverterList()
         }
     }
 }
